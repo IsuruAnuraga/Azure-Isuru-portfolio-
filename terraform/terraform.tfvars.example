@@ -1,0 +1,22 @@
+# Copy this file to terraform.tfvars and customize the values
+
+resource_group_name   = "rg-kuruppu"
+location              = "australiaeast"
+app_service_plan_name = "asp-kuruppu"
+sku_name              = "B1"
+app_name              = "WebApp-Manual-1"
+node_version          = "20-lts"
+app_command_line      = "node server.js"
+always_on             = true
+
+# Additional app settings
+app_settings = {
+  # Add your custom environment variables here
+  # "KEY" = "value"
+}
+
+tags = {
+  Environment = "Production"
+  Project     = "Kuruppu"
+  ManagedBy   = "Terraform"
+}
