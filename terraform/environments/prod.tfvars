@@ -7,7 +7,7 @@ sku_name              = "F1"  # Premium tier for production
 app_name              = "azure-msc-final"
 node_version          = "20-lts"
 app_command_line      = "node server.js"
-always_on             = true  # Required for production
+always_on             = false  # Required for production
 
 app_settings = {
   "ENVIRONMENT" = "production"
