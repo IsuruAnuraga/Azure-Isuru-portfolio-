@@ -9,13 +9,13 @@ terraform {
   }
 
   # Backend configuration for remote state
-  # Configure with: terraform init -backend-config="key=<environment>.tfstate"
+  # Configure with: terraform init -backend-config="key=prod.tfstate"
   backend "azurerm" {
     # These values should be set via backend config file or command line
     # resource_group_name  = "rg-terraform-state"
     # storage_account_name = "tfstateXXXXX"
     # container_name       = "tfstate"
-    # key is set per environment: dev.tfstate, test.tfstate, prod.tfstate
+    # key                  = "prod.tfstate"
   }
 }
 

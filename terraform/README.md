@@ -1,3 +1,6 @@
-az ad sp create-for-rbac --name "github-actions-terraform" --role Contributor --scopes /subscriptions/YOUR_SUBSCRIPTION_ID --sdk-auth
-Add the JSON output as GitHub secret named AZURE_CREDENTIALS
+Create a SP wth cintribute access to subscription
 
+az ad sp create-for-rbac --name "azure-msc" --role Contributor --scopes /subscriptions/31c93d57-7ee6-4811-a3c1-100e8b91524c --sdk-auth
+
+
+Set the backend.conf
